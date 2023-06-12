@@ -6,7 +6,7 @@ from flask import Flask
 app = Flask(__name__)
 
 
-@app.route('/matrix')
+@app.route('/')
 def matrixMultiplication():
     a = [[4, 23, 7],
          [4, 9, 6],
