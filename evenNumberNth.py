@@ -1,7 +1,7 @@
 from flask import  Flask, request, jsonify
 
 
-app = Flask(_name_)
+app = Flask(__name__)
 
 
 @app.route("/<int:n>")
@@ -15,5 +15,6 @@ def hello(n):
 
 
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     app.run(host="127.0.0.1", port=8082, debug=True)
+
